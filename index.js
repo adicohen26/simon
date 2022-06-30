@@ -26,6 +26,14 @@ $(".btn").click(function(){
 
     checkAns(userChoosenPattern.length-1);   
 });
+$("h1").click(function(){
+    if(!started)
+    {
+        started=true;
+    $("#level-title").text("level 1");
+    nextSequence();
+    }  
+});
 
 $(document).on("keypress",function(){
     if(!started)
